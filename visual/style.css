@@ -43,12 +43,21 @@ body {
   margin-top: 20px;
   position: relative;
 	max-width: 880px;
-	background-color: #020202;
+	background-color: #aaaaaa;
 }
 
 .main.monitor {
   float: left;
-	min-width: 240px;
+	min-width: 320px;
+}
+
+.main.message {
+  float: left;
+	min-width: 320px;
+}
+
+.form {
+  display: flex;
 }
 
 .main.chat {
@@ -69,6 +78,7 @@ body {
   background-color: #aaaaaa;
   color: #110e13;
   float: right;
+  padding: 16px 24px;
 }
 
 .action {
@@ -79,7 +89,53 @@ body {
   min-height: 32px;
   color: #f1e7f8;
 }
+.chatter {
+  background-color: #7789c9;
+  border-color: transparent;
+  border-radius: 5px;
+  color: #f1e7f8;
+}
 
 .small {
-  font-size: 12pt;
+  font-size: 8pt;
+}
+
+.fineleft {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  font-size: 10pt;
+}
+
+.fineright {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  font-size: 10pt;
+  color: #7789c9;
+}
+
+.sender {
+  width: 100%;
+  background-color: #000000;
+  border-color: transparent;
+  outline: none;
+  border-radius: 5px;
+  color: #f1e7f8;
+  margin-right: 10px;
+}
+
+.namer {
+  width: 122px;
+  background-color: #161618;
+  border-color: transparent;
+  outline: none;
+  border-radius: 5px;
+  color: #7789c9;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.iconed {
+  padding: 4px 4px;
 }
