@@ -1,0 +1,65 @@
+body {
+  background-image: url("background.png");
+  background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  background-color: #161618;
+  color: #f1e7f8;
+  font-family: 'Courier New', monospace;
+  font-size: 24pt;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.remote {
+  position: relative;
+  max-width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.workspace {
+  position: relative;
+  max-width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.main {
+  background-color: #303030;
+  height: auto;
+  padding: 8px 24px;
+  border-radius: 5px;
+  margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.main.bar {
+  margin-top: 20px;
+  position: relative;
+	max-width: 880px;
+}
+
+.main.monitor {
+  float: left;
+	min-width: 540px;
+}
+
+.main.chat {
+  float: right;
+  width: 100%;
+}
+
+.action {
+  background-color: #384066;
+  border-color: transparent;
+  border-radius: 5px;
+  min-width: 72px;
+  min-height: 32px;
+  color: #f1e7f8;
+}
