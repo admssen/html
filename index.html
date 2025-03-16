@@ -6,13 +6,75 @@
 <title>New World</title> 
 </head>
 
-<body>
+<script>
+  function startTime() {
+    const today = new Date();
+    let h = today.getHours();
+    let m = today.getMinutes();
+    let d = today.getDay();
+    m = checkTime(m);
+    d = checkDay(d);
+    document.getElementById('clock').innerHTML =  h + " " + m;
+    document.getElementById('date').innerHTML =  d;
+    setTimeout(startTime, 4000);
+  }
+  function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+  }
+  function checkDay(i) {
+    switch (i) {
+      case (1):
+        i = "Monday";
+        break;
+      case (2):
+        i = "Tuesday";
+        break;
+      case (3):
+        i = "Wednesday";
+        break;
+      case (4):
+        i = "Thursday";
+        break;
+      case (5):
+        i = "Friday";
+        break;
+      case (6):
+        i = "Saturday";
+        break;
+      case (0):
+        i = "Sunday";
+        break;
+    }
+    return i;
+  }
+</script>
+
+<body onload="startTime()">
 
 <div class="remote">
   <div class="main bar">
     <button class="action">Server</button>
     <button class="action">Chat</button>
     <button class="action">Map</button>
+  </div>
+</div>
+
+<div class="workspace">
+  <div class="main monitor">
+    <div>DAY 2</div>
+    <div>Morning</div>
+    <div>16 : 48</div>
+  </div>
+  <div class="main clock">
+    <b>
+    <div id="clock"></div>
+    <div id="date" class="small"></div>
+    </b>
+  </div>
+  <div class="main chrono">
+    <div>DAY 22</div>
+    <div>early morning</div>
   </div>
 </div>
 

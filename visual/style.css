@@ -7,7 +7,7 @@ body {
   background-color: #161618;
   color: #f1e7f8;
   font-family: 'Courier New', monospace;
-  font-size: 24pt;
+  font-size: 16pt;
   min-height: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -43,11 +43,12 @@ body {
   margin-top: 20px;
   position: relative;
 	max-width: 880px;
+	background-color: #020202;
 }
 
 .main.monitor {
   float: left;
-	min-width: 540px;
+	min-width: 240px;
 }
 
 .main.chat {
@@ -55,11 +56,30 @@ body {
   width: 100%;
 }
 
+.main.chrono {
+  float: right;
+  width: 100%;
+  background-color: #aaaaaa;
+  color: #110e13;
+}
+
+.main.clock {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 32pt;
+  background-color: #aaaaaa;
+  color: #110e13;
+  float: right;
+}
+
 .action {
-  background-color: #384066;
+  background-color: #00a06c;
   border-color: transparent;
   border-radius: 5px;
   min-width: 72px;
   min-height: 32px;
   color: #f1e7f8;
+}
+
+.small {
+  font-size: 12pt;
 }
