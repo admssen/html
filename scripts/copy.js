@@ -1,4 +1,5 @@
 function copyAddress() {
-    var addr = document.getElementById("ip");
-    navigator.clipboard.writeText(addr.textContent);
+    let addr = document.getElementById("ip");
+    addr.select();
+    navigator.clipboard.writeText(addr.value);
 }
