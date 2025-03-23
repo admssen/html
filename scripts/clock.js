@@ -135,16 +135,14 @@ function checkDay(i) {
 }
 
 function updateIP() {
-    document.getElementById('ip').innerHTML = "kakashka";
     var q = new XMLHttpRequest();
     q.open('POST', 'scripts/ip.php', true);
     q.onload = function() {
-        var reply = JSON.parse(this.responseText);
-        document.getElementById('ip').innerHTML = reply.output;
+        document.getElementById('ip').textContent = this.responseText;
     }
     q.onerror = function() {
-        document.getElementById('ip').innerHTML = "kakashka";
+        document.getElementById('ip').textContent = "kakashka";
     }
-    q.send()
-    document.getElementById('ip').innerHTML = "kakashka";
+    q.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    q.send('function=update_ip');
 }
