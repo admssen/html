@@ -34,6 +34,7 @@ button {
 
 .main {
   background-color: #303030;
+  opacity: 0.75;
   height: auto;
   padding: 8px 24px;
   border-radius: 5px;
@@ -41,6 +42,11 @@ button {
 	margin-bottom: 10px;
 	margin-left: 10px;
 	margin-right: 10px;
+	transition-duration: 0.4s;
+}
+
+.main:hover {
+  opacity: 1;
 }
 
 .main.bar {
@@ -49,6 +55,8 @@ button {
 	max-width: 880px;
 	min-width: 320px;
 	background-color: #545454;
+	display: flex;
+	opacity: 1;
 }
 
 .main.monitor {
@@ -71,15 +79,21 @@ button {
 }
 
 .main.chrono {
+  background-image: url("sunmoonh2.svg"), url("panehalf.svg");
+	background-repeat: no-repeat, no-repeat;
+	background-size: cover, cover;
+	background-position: bottom center, bottom center;
   float: right;
   width: 100%;
   background-color: #aaaaaa;
+  opacity: 1;
   color: #110e13;
 }
 
 .main.clock {
   font-family: 'Trebuchet MS', sans-serif;
   font-size: 32pt;
+  opacity: 1;
   background-color: #aaaaaa;
   color: #110e13;
   float: right;
@@ -92,7 +106,12 @@ button {
   border-radius: 5px;
   min-width: 72px;
   min-height: 32px;
+  margin-right: 10px;
   color: #f1e7f8;
+}
+
+.action:hover {
+  background-color: #4e9906;
 }
 
 .chatter {
@@ -140,10 +159,41 @@ button {
   background-color: #161618;
   border-color: transparent;
   outline: none;
-  border-radius: 5px;
+  border-radius: 2px;
   color: #7789c9;
 }
 
 .iconed {
   padding: 4px 4px;
+}
+
+.day{
+  max-width: 50%;
+  margin-bottom: 2px;
+  font-size: 26pt;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-weight: lighter;
+}
+
+.ip {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  background-color: #000000;
+  border-radius: 2px;
+  font-size: 12pt;
+  transition-duration: 0.4s;
+}
+
+.ip:hover {
+  background-color: #aaaaaa;
+  color: #000000;
+  font-weight: bold;
+}
+
+.daytime {
+  max-width: 40%;
+  margin-top: 36px;
+  margin-bottom: auto;
+  font-size: 8pt;
 }
