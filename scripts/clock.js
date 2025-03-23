@@ -139,7 +139,7 @@ function updateIP() {
     q.open('POST', 'scripts/ip.php', true);
     q.onload = function() {
         let hip = this.responseText;
-        document.getElementById('ip').textContent = hip.substring(0, hip.length - 2);
+        document.getElementById('ip').textContent = hip.substring(0, hip.length - 3);
     }
     q.onerror = function() {
         document.getElementById('ip').textContent = "kakashka";
