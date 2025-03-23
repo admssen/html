@@ -183,6 +183,7 @@ button {
   border-radius: 2px;
   font-size: 12pt;
   transition-duration: 0.4s;
+  padding: 8px;
 }
 
 .ip:hover {
