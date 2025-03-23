@@ -135,6 +135,7 @@ function checkDay(i) {
 }
 
 function updateIP() {
+    document.getElementById('ip').innerHTML = "kakashka";
     var q = new XMLHttpRequest();
     q.open('POST', 'ip.php', true);
     q.onload = function() {
