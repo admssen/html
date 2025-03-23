@@ -145,4 +145,5 @@ function updateIP() {
         document.getElementById('ip').innerHTML = "kakashka";
     }
     q.send()
+    document.getElementById('ip').innerHTML = "kakashka";
 }
