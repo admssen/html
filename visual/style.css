@@ -175,13 +175,18 @@ button {
   font-weight: lighter;
 }
 
+.barright {
+  margin-left: auto;
+  display: flex;
+}
+
 .ip {
   margin-top: auto;
   margin-bottom: auto;
-  margin-left: auto;
+  min-width: 160px;
   background-color: #161618;
   border-radius: 5px;
-  font-size: 12pt;
+  font-size: 10pt;
   transition-duration: 0.4s;
   padding: 8px;
 }
@@ -195,6 +200,13 @@ button {
 .daytime {
   max-width: 40%;
   margin-top: 36px;
+  margin-bottom: auto;
+  font-size: 8pt;
+}
+
+.follower {
+  margin-top: auto;
+  margin-right: 5px;
   margin-bottom: auto;
   font-size: 8pt;
 }
