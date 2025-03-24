@@ -158,7 +158,6 @@ function updateIP() {
 function updateStatus() {
     var q = new XMLHttpRequest();
     q.open('POST', 'scripts/status.php', true);
-    document.getElementById('stat').textContent = "error?";
     q.onload = function() {
         let status = this.responseText;
         document.getElementById('stat').textContent = status;
