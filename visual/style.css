@@ -105,20 +105,27 @@ button {
   padding: 16px 24px;
 }
 
+.indicator {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  padding: 4px 4px;
+  background-color: #aaaaaa;
+}
+
 .action {
-  background-color: #00a06c;
+  background-color: #1e1e1e;
   border-color: transparent;
   border-radius: 5px;
-  min-width: 72px;
-  min-height: 32px;
-  margin-right: 10px;
+  width: 36px;
+  height: 36px;
   color: #f1e7f8;
-  padding: 8px;
+  padding: auto;
   font-weight: bold;
 }
 
 .action:hover {
-  background-color: #4e9906;
+  background-color: #161618;
 }
 
 .chatter {
@@ -156,7 +163,7 @@ button {
   background-color: #000000;
   border-color: transparent;
   outline: none;
-  border-radius: 5px;
+  border-radius: 2px;
   color: #f1e7f8;
   margin-right: 10px;
 }
@@ -184,6 +191,10 @@ button {
 
 .barright {
   margin-left: auto;
+  display: flex;
+}
+
+.baredge {
   display: grid;
 }
 
