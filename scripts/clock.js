@@ -16,7 +16,7 @@ function startTime() {
     document.getElementById('date').innerHTML =  checkDay(weekday) + ",&nbsp" + checkMonth(month) + "&nbsp" + date;
     
     let chrono = document.getElementById("chrono");
-    let dnum = 2%8;
+    let dnum = 8%8;
     let accent = '';
     let color = '';
     let spoken = '';

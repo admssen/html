@@ -113,6 +113,8 @@ button {
   min-height: 32px;
   margin-right: 10px;
   color: #f1e7f8;
+  padding: 8px;
+  font-weight: bold;
 }
 
 .action:hover {
