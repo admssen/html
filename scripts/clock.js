@@ -1,14 +1,20 @@
 function startTime() {
+
     updateIP();
+    
+    updateStatus();
+    
     const today = new Date();
     let hour = today.getHours();
     let minute = today.getMinutes();
     let weekday = today.getDay();
     let date = today.getDate();
     let month = today.getMonth();
+    
     document.getElementById('hour').innerHTML =  checkTime(hour);
     document.getElementById('minute').innerHTML =  checkTime(minute);
     document.getElementById('date').innerHTML =  checkDay(weekday) + ",&nbsp" + checkMonth(month) + "&nbsp" + date;
+    
     let chrono = document.getElementById("chrono");
     let dnum = '2';
     let accent = '';
@@ -60,6 +66,7 @@ function startTime() {
     chrono.style.backgroundColor=accent;
     chrono.style.backgroundImage='url("visual/sunmoonh'+dnum+'.svg"), url("visual/panehalf.svg")';
     document.getElementById("daytime").innerHTML = spoken;
+    
     setTimeout(startTime, 4000);
 }
 function checkTime(i) {
@@ -146,4 +153,18 @@ function updateIP() {
     }
     q.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     q.send('function=update_ip');
+}
+
+function updateStatus() {
+    var q = new XMLHttpRequest();
+    q.open('POST', 'scripts/status.php', true);
+    q.onload = function() {
+        let status = this.responseText;
+        document.getElementById('stat').textContent = status;
+    }
+    q.onerror = function() {
+        document.getElementById('stat').textContent = "kakashka";
+    }
+    q.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    q.send('function=watch_server');
 }
