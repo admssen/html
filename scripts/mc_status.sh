@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -laR /var/run/screen/
+pidof java
