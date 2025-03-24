@@ -1,2 +1,2 @@
 #!/bin/bash
-screen -list
+ls -laR /var/run/screen/
