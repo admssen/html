@@ -16,47 +16,47 @@ function startTime() {
     document.getElementById('date').innerHTML =  checkDay(weekday) + ",&nbsp" + checkMonth(month) + "&nbsp" + date;
     
     let chrono = document.getElementById("chrono");
-    let dnum = '2';
+    let dnum = 10%8;
     let accent = '';
     let color = '';
     let spoken = '';
     switch (dnum) {
-        case ('0'):
+        case (0):
             accent='#000000';
             color='#dee6f7';
             spoken = 'midnight';
             break;
-        case ('1'):
+        case (1):
             accent='#01062b';
             color='#dee6f7';
             spoken = 'late night';
             break;
-        case ('2'):
-            accent='#c8c3b0';
+        case (2):
+            accent='#dfb288';
             color='#110e13';
             spoken = 'early morning';
             break;
-        case ('3'):
-            accent='#aaaaaa';
+        case (3):
+            accent='#c8c3b0';
             color='#110e13';
             spoken = 'morning';
             break;
-        case ('4'):
+        case (4):
             accent='#aaaaaa';
             color='#110e13';
             spoken = 'afternoon';
             break;
-        case ('5'):
-            accent="#aaaaaa";
+        case (5):
+            accent="#c8c3b0";
             color='#110e13';
             spoken = 'evening';
             break;
-        case ('6'):
-            accent='#c8c3b0';
+        case (6):
+            accent='#fe7408';
             color='#110e13';
             spoken = 'sunset';
             break;
-        case ('7'):
+        case (7):
             accent='#01062b';
             color='#dee6f7';
             spoken = 'early night';

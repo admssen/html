@@ -88,6 +88,10 @@ button {
   background-color: #aaaaaa;
   opacity: 1;
   color: #110e13;
+  text-shadow:
+    1px 1px 2px #000000,
+    0 0 1em #ffffff44,
+    0 0 0.2em #ffffff44;
 }
 
 .main.clock {
