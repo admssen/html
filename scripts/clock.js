@@ -16,7 +16,7 @@ function startTime() {
     document.getElementById('date').innerHTML =  checkDay(weekday) + ",&nbsp" + checkMonth(month) + "&nbsp" + date;
     
     let chrono = document.getElementById("chrono");
-    let dnum = 10%8;
+    let dnum = 2%8;
     let accent = '';
     let color = '';
     let spoken = '';
@@ -52,7 +52,7 @@ function startTime() {
             spoken = 'evening';
             break;
         case (6):
-            accent='#fe7408';
+            accent='#e58c62';
             color='#110e13';
             spoken = 'sunset';
             break;
@@ -149,7 +149,7 @@ function updateIP() {
         document.getElementById('ip').textContent = hip.substring(0, hip.length - 3) + ':25565';
     }
     q.onerror = function() {
-        document.getElementById('ip').textContent = "kakashka";
+        document.getElementById('ip').textContent = "error?";
     }
     q.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     q.send('function=update_ip');
@@ -158,13 +158,13 @@ function updateIP() {
 function updateStatus() {
     var q = new XMLHttpRequest();
     q.open('POST', 'scripts/status.php', true);
-    document.getElementById('stat').textContent = "kakashka";
+    document.getElementById('stat').textContent = "error?";
     q.onload = function() {
         let status = this.responseText;
         document.getElementById('stat').textContent = status;
     }
     q.onerror = function() {
-        document.getElementById('stat').textContent = "kakashka";
+        document.getElementById('stat').textContent = "error?";
     }
     q.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     q.send('function=watch_server');
